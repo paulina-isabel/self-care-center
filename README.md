@@ -37,7 +37,7 @@ Write HTML, CSS and JavaScript to accomplish the prompts in the provided comp.
 ### Wins + Challenges:
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
 **Wins**
-1. I deepened my undestanding of arrays and how to use them together with if statements in my functions. 
+1. I deepened my understanding of arrays and how to use them together with if statements in my functions. 
 2. I got more experience writing dynamic code. 
 
 **Challenges**
