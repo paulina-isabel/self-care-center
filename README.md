@@ -16,7 +16,7 @@ In this project, I built a website that helps the user remind themselves of thei
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-<img width="1440" alt="SC 2" src="https://user-images.githubusercontent.com/123966150/230809484-f54498f5-b002-46a4-9ff1-dfcd3879eb20.png">
+![Self Care Gif](https://user-images.githubusercontent.com/123966150/230817002-e2e6fb46-22ad-47be-abc8-78c220277639.gif)
 
 
 ### Context:
