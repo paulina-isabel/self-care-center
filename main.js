@@ -11,7 +11,8 @@ var affirmations = [
     "I am full of energy and vitality and my mind is calm and peaceful.",
     "Every day I am getting healthier and stronger.",
     "I honor my body by trusting the signals that it sends me.",
-    "I manifest perfect health by making smart choices."];
+    "I manifest perfect health by making smart choices."
+    ];
 var mantras = [
     "Breathing in, I send myself love.",
     "Breathing out, I send love to someone else who needs it.",
@@ -29,25 +30,51 @@ var mantras = [
     "The only constant is change.",
     "Onward and upward.",
     "I am the sky, the rest is weather.",
-]
+    ];
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
 function receiveMessage() {
-    var affirmationMessage = affirmations[getRandomIndex(affirmations)];
-    var mantraMessage = mantras[getRandomIndex(mantras)];
-    if (document.getElementById('Affirmation').checked){
-       message.innerHTML = `<p>${affirmationMessage}</p>`
-    } else if (document.getElementById('Mantra').checked){
-        message.innerHTML = `<p>${mantraMessage}</p>`
-    }    
+    if (document.getElementById('Affirmation').checked && affirmations.length){
+        image.classList.add("hidden");
+       var affirmationsIndex = getRandomIndex(affirmations);
+       message.innerText = affirmations[affirmationsIndex];
+       addMessages1(affirmationsIndex);
+    } else if (!affirmations.length) {
+        image.classList.remove("hidden")
+        message.innerText = 'You will now begin seeing repeated affirmation messages.'
+        affirmations = shownAffirmationMessages;
+        shownAffirmationMessages = [];
+    }
+    if (document.getElementById('Mantra').checked && mantras.length){
+        image.classList.add("hidden");
+        var mantrasIndex = getRandomIndex(mantras);
+        message.innerText = mantras[mantrasIndex];
+        addMessages2(mantrasIndex);
+    }  else if (!mantras.length) {
+        image.classList.remove("hidden")
+        message.innerText = 'You will now begin seeing repeated mantra messages.'
+        mantras = shownMantraMessages;
+        shownMantraMessages = [];
+    }
 }
 
-var receiveMessageButton = document.querySelector('.add-button');
-var interactivePanel = document.querySelector('#interactive');
-var messagePanel = document.querySelector('.message-box');
-var message = document.querySelector('#message')
+function addMessages1(i) {
+    shownAffirmationMessages.push(affirmations[i]);
+    affirmations.splice(i, 1);
+}
+
+function addMessages2(i) {
+    shownMantraMessages.push(mantras[i]);
+    mantras.splice(i, 1);
+}
+
+var image = document.querySelector(".image");
+var receiveMessageButton = document.querySelector(".button");
+var message = document.querySelector('.message')
+var shownAffirmationMessages = []
+var shownMantraMessages = []
 
 receiveMessageButton.addEventListener('click', receiveMessage)
