@@ -1,51 +1,46 @@
-# Self Care Center
-## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
 ______________________________________________________  
 
-# Self-Care Center 
+# Self-Care Center  
 
 ### Abstract:
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+In this project, I built a website that helps the user remind themselves of their inherent value through the display of mantras and affirmations. The user has the ability to choose wether they want to hear a mantra or affirmation, and upon choosing, click a "Receive Message" button that then displays a random message in their topic of choice. They will be able to see every message once without repeating, until the messages run out. The user then gets notified that they will begin to see repeated messages, and if they choose they can continue seeing messages. This can continue in an infinite loop. They can also switch to the other category and begin to see messages from that prompt in the same manner.
 
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
+1. Fork this repository.
+2. Clone your forked repository down into your local device.
+3. `cd` into this forked repository.
+4. Open in VS Code.
+5. Run open index.html in your terminal in order to view the project in a browser.
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+<img width="1440" alt="SC 2" src="https://user-images.githubusercontent.com/123966150/230809484-f54498f5-b002-46a4-9ff1-dfcd3879eb20.png">
+
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+I was given six days to complete this project, and I took about 5 days to complete. I'm in Mod 1 of the Turing program.
 
 ### Contributors:
 [//]: <> (Who worked on this application? Link to their GitHubs.)
+[Paulina Rubio](https://github.com/paulina-isabel)
 
 ### Learning Goals:
 [//]: <> (What were the learning goals of this project? What tech did you work with?)
+- Gain experience building an application.
+Write HTML, CSS and JavaScript to accomplish the prompts in the provided comp.
+
+- Understand how to listen and respond to user events.
 
 ### Wins + Challenges:
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+**Wins**
+1. I deepened my undestanding of arrays and how to use them together with if statements in my functions. 
+2. I got more experience writing dynamic code. 
+
+**Challenges**
+1. The most challenging part of the project for me was getting the app to not only show each message just once, but let the user know they've reached the end of the messages before continuing to display messages upon clicking the message button. 
+2. Git Flow is still proving to be ticky for me, but I noticed an improvement from the project I worked on last week. 
+3. Initially had some trouble working with two different arrays and tying the main, "Receive Message" button to two radio buttons, specifically when reaching the CYOA part of the project. 
